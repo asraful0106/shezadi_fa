@@ -14,7 +14,27 @@
       <h1>YOUR<span> GIFT</span> IS</h1>
       <h2>COMING SOON</h2>
       <div class="countdown">00 : 00 : 00 : 00</div>
+      <h6>LEFT TO GO</h6>
+      <h4>Love you Pagli</h4>
+      <div class="mu"><img src="music/play.png" id="icon"></div>
     </div>
+    <audio id="lovesong">
+        <source src="music/love.mp3" type="audio/mp3">
+    </audio>
+    <script>
+        var lovesong = document.getElementById("lovesong");
+        var icon = document.getElementById("icon");
+icon.onclick = function(){
+  if(lovesong.paused){
+    lovesong.play();
+    icon.src = "music/pause.png"
+  }
+  else{
+    lovesong.pause();
+    icon.src = "music/play.png"
+  }
+}
+    </script>
   </header>
   <script src="main.js"></script>
 </body>

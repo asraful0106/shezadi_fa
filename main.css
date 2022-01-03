@@ -7,6 +7,13 @@
   body {
     font-family: montserrat, sans-serif;
   }
+  header .content .mu {
+      padding-top: 2px;
+  }
+  header #icon {
+      width: 100px;
+      cursor: pointer;
+  }
   
   header {
     display: flex;
@@ -30,6 +37,17 @@
     bottom: 0;
     z-index: 0;
     background-color: rgba(34, 34, 34, 0.5);
+  }
+  header .content h4 {
+      color: rgba(255, 255, 157, 0.932);
+      font-size: 20px;
+      font-weight: 800;
+      font-style: italic;
+      padding-top:150px;
+  }
+  header .content h6{
+      color: white;
+      padding-top: 20px;
   }
   header .content {
     position: relative;
@@ -90,7 +108,7 @@
     }
   }
   header .content .countdown {
-    color: #FFF;
+    color: rgb(119, 255, 149);
     font-size: 36px;
     font-weight: 400;
   }
