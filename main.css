@@ -14,18 +14,6 @@
       width: 100px;
       cursor: pointer;
   }
-  header .content .gifa {
-    height: 1px;
-    width: 1px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    min-height: 5vh;
-    position: relative;
-  }
-  
   header {
     display: flex;
     flex-direction: column;
