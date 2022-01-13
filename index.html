@@ -1,41 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>My Love For You</title>
-  <link rel="icon" type="image/x-icon" href="img/af_logo.png">
-  <link rel="stylesheet" href="main.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <title>My Love For You</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="image/af_logo.png">
 </head>
 <body>
-  <header>
-      <div class="content">
-      <h1>YOUR<span> GIFT</span> IS</h1>
-      <h2>COMING SOON</h2>
-      <div class="countdown">00 : 00 : 00 : 00</div>
-      <h6>LEFT TO GO</h6>
-      <h4>Love you Pagli</h4>
-      <div class="mu"><img src="music/play.png" id="icon"></div>
-    </div>
-    <audio id="lovesong">
-        <source src="music/love.mp3" type="audio/mp3">
-    </audio>
-    <script>
-        var lovesong = document.getElementById("lovesong");
-        var icon = document.getElementById("icon");
-icon.onclick = function(){
-  if(lovesong.paused){
-    lovesong.play();
-    icon.src = "music/pause.png"
-  }
-  else{
-    lovesong.pause();
-    icon.src = "music/play.png"
-  }
-}
-    </script>
-  </header>
-  <script src="main.js"></script>
+    <header>
+        <div class="content">
+            <div class="top-slider">
+                <marquee behavior="scroll">Don't ever fear or fill alone I was, I am and I will be with you for forever my love. Love you Shezadi amr-----(From your Love)------</marquee>
+            </div>
+            <div class="main-contex">
+                <div class="text1">
+                    <h2>YOUR GIFT <span>IS</span></h2>
+                    <h1>COMMING SOON</h1>
+                    <div class="countdown">
+                        <div class="container-day">
+                            <h1 class="day">00</h1>
+                            <p>Day</p>
+                        </div>
+                        <div class=container-hour">
+                            <h1 class="hour">00</h1>
+                            <p>Hour</p>
+                        </div>
+                        <div class="container-minute">
+                            <h1 class="minute">00</h1>
+                            <p>Minute</p>
+                        </div>
+                        <div class="container-second">
+                            <h1 class="second">00</h1>
+                            <p>Sec</p>
+                        </div>
+                    </div>
+                    <h4>LEFT TO GO</h4>
+                </div>
+                <div class="love">
+                    <h3>Love you pgli</h3>
+                    <img id="icon" src="image/play.png" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+    <script src="js/main.js"></script>
+
+    <audio id="lovesong" src="media/love.mp3"></audio>
+    <script src="js/audio.js"></script>
 </body>
-</html> 
+</html>

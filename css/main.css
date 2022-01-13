@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Island+Moments&family=Luxurious+Roman&display=swap');
+
+@keyframes animate {
+    0%
+    {
+        background-image: url('../image/04.jpg');
+    }
+    50%
+    {
+        background-image: url("../image/01.jpg");
+    }
+    100%
+    {
+        background-image: url('../image/04.jpg');
+    }
+}
+/*-----------------------------------------
+work start
+-----------------------------------------*/
+body {
+    margin: 0;
+    padding: 0;
+}
+header {
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../image/04.jpg');
+    animation: animate 16s infinite ease-in-out;
+}
+header:after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  background-color: rgba(34, 34, 34, 0.4);
+}
+header .content {
+  position: relative;
+  z-index: 1;
+}
+.top-slider {
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-family: 'Island Moments', cursive;
+    font-weight: 500;
+    font-size: 25px;
+    background-color: rgba(255, 0, 0, 0.637);
+    border-radius: 5px;
+}
+.top-slider marquee {
+    color: aliceblue;
+}
+.main-contex{
+    font-family: 'Luxurious Roman', cursive;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+.countdown {
+  display: flex;
+  color: greenyellow;
+}
+.countdown h1 {
+   font-size: 50px;
+}
+.day {
+  padding-right: 50px;
+}
+.hour {
+  padding-right: 50px;
+}
+.minute {
+  padding-right: 50px;
+}
+.text1 h4 {
+  margin: 60px;
+}
+.love {
+    margin-top: 40px;
+}
+.love img {
+    width: 45%;
+}
