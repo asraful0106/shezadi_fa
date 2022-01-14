@@ -46,8 +46,21 @@
         </div>
     </header>
     <script src="js/main.js"></script>
-
     <audio id="lovesong" src="media/love.mp3"></audio>
-    <script src="js/audio.js"></script>
+    <script>
+        var lovesong = document.getElementById("lovesong");
+        var icon = document.getElementById("icon");
+        lovesong.volume = 0.2;
+        icon.onclick = function(){
+        if(lovesong.paused){
+        lovesong.play();
+        icon.src = "image/pause.png"
+        }
+        else{
+        lovesong.pause();
+        icon.src = "image/play.png"
+        }
+        }
+    </script>
 </body>
 </html>
